@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1DB954;
+    --dark-color: #191414;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    color: #cccccc;
+    font-size: 0.90rem;
+    background-color: black;
+    padding: 2rem;
+    height: 100vh;
+    min-width: max-content;
+}
+
+span.tabs:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+    font-weight: 700;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+#s-logo {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.site-name {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+i {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+}
+.top {
+    margin-bottom: 3rem;
+}
+
+
+/* Right Section */
+.right-section {
+    background-color: #1c1c1c;
+    width: 90%;
+    height: 100vh;
+    overflow-x: hidden;
+} 
+
+/* Header */
+.header {
+    position: fixed;
+    padding: 2rem 1rem;
+    color: #fff;
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    height: 3px;
+}
+
+/* Header Buttons */
+.header-buttons {
+    margin-left: 0.75rem;
+    text-align: center;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    font-family: inherit;
+    padding: 0.75rem;
+    border-radius: 99px;
+    border: none;
+    width: 20rem;
+    display: none;
+    transition: all 0.5s ease-out;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+#left-arrow,
+#right-arrow {
+    padding: 0.75rem;
+    width: 10px;
+    height: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+#left-arrow:hover,
+#right-arrow:hover {
+    cursor: pointer;
+}
+
+/* Header Tabs */
+.header-tabs {
+    text-align: left;
+    margin-right: 2rem;
+}
+
+.ul-header {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.25px;
+    font-weight: 700;
+}
+
+#sign-up {
+    padding: 0.75rem 2.5rem;
+    margin: 2.75rem 0; 
+    border-radius: 99px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#log {
+    background-color: #fff;
+    color: #121212;
+    padding: 0.75rem 2.5rem;
+    margin: 2.75rem 0; 
+    border-radius: 99px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#sign-up:hover,
+#log:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Cards */
+h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.main-container {
+    margin-top: 3.5rem;
+    padding: 2rem;
+    width: 100vw;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    width: 80%;
+}
+
+.search-view {
+    flex-wrap: wrap;
+}
+
+.movie {
+    font-size: 0.75rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: #1f1f1f;
+    width: 180px;
+    height: 260px;
+    border-radius: 5px;
+    box-shadow: 9px 12px 17px -8px rgba(30, 30, 60, 0.25);
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.movie:hover {
+    cursor: pointer;
+}
+
+img,
+h3 {
+    margin-bottom: 0.5rem;
+}
+
+.movie img {
+    width: 100%;
+    height: 150px;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.info-card {
+    font-size: 0.80rem;
+    font-family: inherit;
+    width: inherit;
+    height: inherit;
+    padding: 1rem;
+    background-color: white;
+    color: #121212;
+    z-index: 1;
+    position: absolute;
+    line-height: 1.25rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    overflow-y: scroll;
+}
+
+.info-card:hover {
+  opacity: 0.95;
+}
+
+.info-card::-webkit-scrollbar {
+    display: none;
+
+.overview {
+    color: gray;
+}
+
+/* Media Queries */
+@media only screen and (max-width:1000px) {
+    .sidebar {
+        min-width: 25%;
+        padding: 1rem;
+    }
+
+    .container {
+        transform: scale(.9);
+    }
+
+    .right-section {
+        width: 75%;
+    }
+}

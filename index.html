@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotiflix</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-s" id="s-logo"></i>
+            <span class="site-name">Spotiflix</span>
+        </div>
+        <div class="container top">
+            <ul>
+                <li>
+                    <i class="fas fa-home"></i>
+                    <span class="tabs" id="home">Home</span>
+                </li>
+                <li>
+                    <i class="fas fa-search"></i>
+                    <span class="tabs" id="search">Search</span>
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <span class="tabs" id="library">Your Library</span>
+                </li>
+            </ul>
+        </div>
+        <div class="container bottom">
+            <ul>
+                <li>
+                    <i class="fas fa-plus-square"></i>
+                    <span class="tabs" id="playlist">Create Watchlist</span>
+                </li>
+                <li>
+                    <i class="fas fa-heart"></i>
+                    <span class="tabs" id="liked">Liked Shows</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <div class="header">
+            <div class="header-buttons">
+                <i class="fas fa-chevron-left" id="left-arrow"></i>
+                <i class="fas fa-chevron-right" id="right-arrow"></i>
+                <form id="form">
+                    <input type="text" id="search-bar" placeholder="Search" />
+                </form>
+            </div>
+            <div class=" header-tabs">
+                <ul class="ul-header">
+                    <li id="sign-up">SIGN UP</li>
+                    <li id="log">LOG IN</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container">
+            <h1>Trending Now</h1>
+            <div class="cards-container" id="trending"></div>
+            <h1>Top Rated</h1>
+            <div class="cards-container" id="top-rated"></div>
+            <h1>Popular</h1>
+            <div class="cards-container" id="popular"></div>
+            <div class="cards-container" id="search-results"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
