@@ -67,7 +67,7 @@ i {
 /* Right Section */
 .right-section {
     background-color: #1c1c1c;
-    width: 90%;
+    width: 85%;
     height: 100vh;
     overflow-x: hidden;
 } 
@@ -245,6 +245,7 @@ h3 {
 
 .info-card::-webkit-scrollbar {
     display: none;
+}
 
 .overview {
     color: gray;
