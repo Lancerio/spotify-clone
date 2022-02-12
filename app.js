@@ -176,8 +176,6 @@ function hideTitles() {
     titles[2].style.display = 'none';
 }
 
-
-
 // Search
 searchBtn.addEventListener('click', () => {
     searchBar.style.display = 'block';
